@@ -10,8 +10,21 @@ https://coolors.co/264653-2a9d8f-e9c46a-f4a261-e76f51
 
 /* Global Styles
 -------------------------------*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
     color:#f4a261ff;
+    padding: 0;
+    margin: 0;
+    font-family: 'Limelight', cursive;
+    font-size: 15px;
+    line-height: 1.7;
 
 }
 img {
@@ -20,7 +33,21 @@ img {
 a:hover {
     text-decoration: none;
 }
-
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 50px;
+}
+h1, h2 {
+    font-family:cursive;
+    margin: 0;
+}
+.content-wrap {
+width: 700px;
+margin: 0 auto;
+padding: 60px 0;
+}
 /* Profile
 -------------------------------*/
 header {
@@ -32,7 +59,7 @@ header {
 -------------------------------*/
 .Projects {
     background:#e9c46aff;
-    color:white
+    color:white;   
 }
 .Projects a {
     color: thistle;
@@ -40,6 +67,12 @@ header {
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
+    display: inline-block;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Work Experiene
